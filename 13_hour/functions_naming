@@ -1,0 +1,9 @@
+import random
+
+def naming(name):
+    health = random.randint(1, 31)
+    species = ["Crewmate", "Impostor", "Duck", "Goose"]
+    individual = random.choice(species)
+    return f"{name} is a {individual} with {health}HP."
+
+print(naming(input("Name: ")))
